@@ -82,6 +82,7 @@ set_property parent.project_path C:/Users/Alan/Documents/GitHub/Tempest/tempest/
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:arty-a7-100:part0:1.0 [current_project]
+set_property ip_output_repo c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
@@ -98,19 +99,6 @@ add_files C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/
 add_files C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/ROM136.coe
 add_files C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/ROM135.coe
 add_files C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/ROM134.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_132.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_131.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_130.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_129.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_128.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM_127.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/vgROM.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/CombinedROMS.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM133.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/MB.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM136.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM135.coe
-add_files c:/Users/Robert/Desktop/TEMPEST/ROM134.coe
 read_verilog -library xil_defaultlib {
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Timer_Control.v
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Program_Counter.v

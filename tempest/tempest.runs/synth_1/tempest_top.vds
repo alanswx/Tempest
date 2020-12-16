@@ -2,13 +2,84 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec 16 13:50:12 2020
-# Process ID: 7152
+# Start of session at: Wed Dec 16 13:54:29 2020
+# Process ID: 21220
 # Current directory: C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1
 # Command line: vivado.exe -log tempest_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tempest_top.tcl
 # Log file: C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/tempest_top.vds
 # Journal file: C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source tempest_top.tcl -notrace
-ERROR: [Vivado 12-172] File or Directory 'c:/Users/Robert/Desktop/TEMPEST/ROM_132.coe' does not exist
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 16 13:50:24 2020...
+Command: synth_design -top tempest_top -part xc7a100tcsg324-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xco
+C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xco
+
+INFO: [IP_Flow 19-2162] IP 'ROM132' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM132' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM132' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM131' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM131' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM131' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM130' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM130' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM130' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM129' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM129' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM129' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM128' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM128' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM128' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM127' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM127' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM127' do not match.
+INFO: [IP_Flow 19-2162] IP 'vgROM' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'vgROM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'vgROM' do not match.
+INFO: [IP_Flow 19-2162] IP 'vgRAM' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'vgRAM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'vgRAM' do not match.
+INFO: [IP_Flow 19-2162] IP 'CombinedROM' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'CombinedROM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'CombinedROM' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROMX' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROMX' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROMX' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM7' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM7' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM7' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM5' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM5' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM5' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM3' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM3' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM3' do not match.
+INFO: [IP_Flow 19-2162] IP 'ROM1' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'ROM1' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'ROM1' do not match.
+INFO: [IP_Flow 19-2162] IP 'RAM' is locked:
+* IP definition 'Block Memory Generator (6.1)' for IP 'RAM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'RAM' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7648
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.051 ; gain = 64.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tempest_top' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/tempest_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'T65' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd:105]
+INFO: [Synth 8-3491] module 'T65_MCode' declared at 'C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_MCode.vhd:69' bound to instance 'mcode' of component 'T65_MCode' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'T65_MCode' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_MCode.vhd:103]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_MCode.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'T65_MCode' (1#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_MCode.vhd:103]
+INFO: [Synth 8-3491] module 'T65_ALU' declared at 'C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_ALU.vhd:64' bound to instance 'alu' of component 'T65_ALU' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'T65_ALU' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_ALU.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T65_ALU' (2#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_ALU.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T65' (3#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd:105]
+INFO: [Synth 8-6157] synthesizing module 'T65_Address_Decoder' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:129]
+WARNING: [Synth 8-567] referenced signal 'RESET_n' should be on the sensitivity list [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:127]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:255]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (4#1) [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.v:40]
+ERROR: [Synth 8-439] module 'ROMX' not found [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:539]
+ERROR: [Synth 8-6156] failed synthesizing module 'T65_Address_Decoder' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'tempest_top' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/tempest_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1266.070 ; gain = 139.922
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 16 13:55:00 2020...
