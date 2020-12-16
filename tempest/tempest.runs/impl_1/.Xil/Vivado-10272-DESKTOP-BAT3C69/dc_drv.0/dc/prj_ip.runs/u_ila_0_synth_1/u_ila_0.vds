@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 16 14:52:17 2020
+# Process ID: 9484
+# Current directory: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/u_ila_0_synth_1
+# Command line: vivado.exe -log u_ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source u_ila_0.tcl
+# Log file: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/u_ila_0_synth_1/u_ila_0.vds
+# Journal file: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/u_ila_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source u_ila_0.tcl -notrace
+Command: synth_design -top u_ila_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25260
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1223.262 ; gain = 97.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'u_ila_0' [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.gen/sources_1/ip/u_ila_0/synth/u_ila_0.v:84]

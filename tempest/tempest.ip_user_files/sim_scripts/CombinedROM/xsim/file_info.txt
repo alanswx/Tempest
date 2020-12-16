@@ -1,0 +1,2 @@
+CombinedROM.v,verilog,xil_defaultlib,../../../../tempest.srcs/sources_1/ip/CombinedROM/sim/CombinedROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

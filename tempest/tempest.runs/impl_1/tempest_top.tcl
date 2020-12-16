@@ -134,24 +134,19 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.xpr [current_project]
   set_property ip_output_repo C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/tempest_top.dcp
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM132/ROM132.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM131/ROM131.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM130/ROM130.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM129/ROM129.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM128/ROM128.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM127/ROM127.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM.xco
   read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM7/ROM7.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM5/ROM5.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM3/ROM3.xco
-  read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM1/ROM1.xco
   read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xco
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM1/ROM1.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM3/ROM3.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM5/ROM5.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM7/ROM7.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM.xci
+  read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc
 OPTRACE "read constraints: implementation" END { }
@@ -310,34 +305,4 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi tempest_top.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force tempest_top.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force tempest_top}
-  catch {file copy -force tempest_top.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

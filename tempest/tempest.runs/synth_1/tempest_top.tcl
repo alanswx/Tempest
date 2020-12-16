@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -79,6 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.cache/wt [current_project]
 set_property parent.project_path C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:arty-a7-100:part0:1.0 [current_project]
@@ -154,35 +156,30 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_ALU.vhd
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd
 }
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM132/ROM132.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM131/ROM131.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM130/ROM130.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM129/ROM129.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM128/ROM128.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM127/ROM127.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM.xco
-
 read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xco
 
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM7/ROM7.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM5/ROM5.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM3/ROM3.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM1/ROM1.xco
-
 read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xco
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM1/ROM1.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM1/ROM1_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM3/ROM3.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM3/ROM3_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM5/ROM5.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM5/ROM5_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM7/ROM7.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROM7/ROM7_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

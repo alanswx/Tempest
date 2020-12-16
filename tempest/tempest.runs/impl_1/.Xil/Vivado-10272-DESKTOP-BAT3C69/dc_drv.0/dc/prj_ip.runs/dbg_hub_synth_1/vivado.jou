@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 16 14:52:17 2020
+# Process ID: 18732
+# Current directory: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1
+# Command line: vivado.exe -log dbg_hub.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dbg_hub.tcl
+# Log file: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dbg_hub.vds
+# Journal file: c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/impl_1/.Xil/Vivado-10272-DESKTOP-BAT3C69/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dbg_hub.tcl -notrace
