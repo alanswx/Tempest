@@ -1,0 +1,49 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/ROM132/ROM132.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM131/ROM131.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM130/ROM130.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM129/ROM129.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM128/ROM128.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM127/ROM127.v" \
+"../../../../project_1.srcs/sources_1/ip/vgROM/vgROM.v" \
+"../../../../project_1.srcs/sources_1/ip/vgRAM/vgRAM.v" \
+"../../../../project_1.srcs/sources_1/ip/CombinedROM/CombinedROM.v" \
+"../../../../project_1.srcs/sources_1/ip/ROMX/ROMX.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM7/ROM7.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM5/ROM5.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM3/ROM3.v" \
+"../../../../project_1.srcs/sources_1/ip/ROM1/ROM1.v" \
+"../../../../project_1.srcs/sources_1/ip/RAM/RAM.v" \
+"../../../../../../TEMPEST/MB_Timer_Control.v" \
+"../../../../../../TEMPEST/MB_Program_Counter.v" \
+"../../../../../../TEMPEST/MB_B1.v" \
+"../../../../../../TEMPEST/MB_A1.v" \
+"../../../../../../TEMPEST/MBControl3.v" \
+"../../../../../../TEMPEST/MBControl2.v" \
+"../../../../../../TEMPEST/MBControl1.v" \
+"../../../../../../TEMPEST/ALU_Top.v" \
+"../../../../../../TEMPEST/vg_vec_timer_cntrl.v" \
+"../../../../../../TEMPEST/vg_vec_timer.v" \
+"../../../../../../TEMPEST/vg_state.v" \
+"../../../../../../TEMPEST/vg_sp_pc.v" \
+"../../../../../../TEMPEST/vg_fsm_cntrl.v" \
+"../../../../../../TEMPEST/vg_data_shifter.v" \
+"../../../../../../TEMPEST/vg_addr_dec_sim.v" \
+"../../../../../../TEMPEST/POKEY_TOP.v" \
+"../../../../../../TEMPEST/MB_Top.v" \
+"../../../../../../TEMPEST/MB_Address_Decode.v" \
+"../../../../../../TEMPEST/data_out.v" \
+"../../../../../../TEMPEST/vg_top.v" \
+"../../../../../../TEMPEST/T65_Address_Decoder.v" \
+"../../../../../../TEMPEST/Schematic_3B.v" \
+"../../../../../../TEMPEST/clk_gen_top.v" \
+"../../../../../../TEMPEST/tempest_top.v" \
+"../../../../../../TEMPEST/dcm.v" \
+"../../../../../../TEMPEST/Tempest_top_Test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

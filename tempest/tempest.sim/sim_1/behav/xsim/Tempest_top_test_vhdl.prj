@@ -1,0 +1,60 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/ROM132/ROM132.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM131/ROM131.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM130/ROM130.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM129/ROM129.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM128/ROM128.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM127/ROM127.vhd" \
+"../../../../project_1.srcs/sources_1/ip/vgROM/vgROM.vhd" \
+"../../../../project_1.srcs/sources_1/ip/vgRAM/vgRAM.vhd" \
+"../../../../project_1.srcs/sources_1/ip/CombinedROM/CombinedROM.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROMX/ROMX.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM7/ROM7.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM5/ROM5.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM3/ROM3.vhd" \
+"../../../../project_1.srcs/sources_1/ip/ROM1/ROM1.vhd" \
+"../../../../project_1.srcs/sources_1/ip/RAM/RAM.vhd" \
+
+vhdl basic  \
+"../../../../../../TEMPEST/am2901/am2901_comps_KL2.vhd" \
+"../../../../../../TEMPEST/am2901/synch_pkg.vhd" \
+"../../../../../../TEMPEST/am2901/counters_pkg.vhd" \
+"../../../../../../TEMPEST/am2901/am2901_comps_NoBuff.vhd" \
+"../../../../../../TEMPEST/am2901/am2901_comps_DataOut.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../TEMPEST/am2901/ureg.vhd" \
+
+vhdl basic  \
+"../../../../../../TEMPEST/am2901/regs_pkg.vhd" \
+"../../../../../../TEMPEST/am2901/mnemonics.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../TEMPEST/am2901/src_op.vhd" \
+
+vhdl basic  \
+"../../../../../../TEMPEST/am2901/ram_regs_E2.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../TEMPEST/am2901/ram_regs.vhd" \
+"../../../../../../TEMPEST/am2901/q_reg.vhd" \
+"../../../../../../TEMPEST/am2901/out_mux.vhd" \
+
+vhdl basic  \
+"../../../../../../TEMPEST/am2901/am2901_comps_E2.vhd" \
+"../../../../../../TEMPEST/am2901/am2901_comps.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../TEMPEST/am2901/alu.vhd" \
+"../../../../../../TEMPEST/pkg_asteroids.vhd" \
+"../../../../../../TEMPEST/am2901/am2901_E2.vhd" \
+"../../../../../../TEMPEST/am2901/am2901.vhd" \
+"../../../../../../TEMPEST/T65_Pack.vhd" \
+"../../../../../../TEMPEST/asteroids_pokey.vhd" \
+"../../../../../../TEMPEST/T65_MCode.vhd" \
+"../../../../../../TEMPEST/T65_ALU.vhd" \
+"../../../../../../TEMPEST/T65.vhd" \
+
+# Do not sort compile order
+nosort
