@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec 16 14:49:47 2020
-# Process ID: 23848
+# Start of session at: Thu Dec 17 07:26:50 2020
+# Process ID: 16720
 # Current directory: C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1
 # Command line: vivado.exe -log tempest_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tempest_top.tcl
 # Log file: C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/tempest_top.vds
@@ -12,22 +12,14 @@
 source tempest_top.tcl -notrace
 Command: synth_design -top tempest_top -part xc7a100tcsg324-1
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xco
-C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xco
-
-INFO: [IP_Flow 19-2162] IP 'vgRAM' is locked:
-* IP definition 'Block Memory Generator (6.1)' for IP 'vgRAM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'vgRAM' do not match.
-INFO: [IP_Flow 19-2162] IP 'RAM' is locked:
-* IP definition 'Block Memory Generator (6.1)' for IP 'RAM' has a newer major version in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc3s500evq100-4' used to customize the IP 'RAM' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21028
+INFO: [Synth 8-7075] Helper process launched with PID 28056
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1191.848 ; gain = 65.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1192.148 ; gain = 65.605
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'tempest_top' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/tempest_top.v:3]
 INFO: [Synth 8-638] synthesizing module 'T65' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd:105]
@@ -43,18 +35,18 @@ INFO: [Synth 8-6157] synthesizing module 'T65_Address_Decoder' [C:/Users/Alan/Do
 INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:129]
 WARNING: [Synth 8-567] referenced signal 'RESET_n' should be on the sensitivity list [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:127]
 INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:255]
-INFO: [Synth 8-6157] synthesizing module 'RAM' [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'RAM' (4#1) [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.v:40]
-INFO: [Synth 8-6157] synthesizing module 'ROMX' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROMX_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ROMX' (5#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROMX_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ROM1' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ROM1' (6#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ROM3' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ROM3' (7#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ROM5' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ROM5' (8#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM5_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ROM7' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ROM7' (9#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/ROM7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (4#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROMX' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROMX_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROMX' (5#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROMX_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM1' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM1' (6#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM3' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM3' (7#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM5' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM5' (8#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM7' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM7' (9#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/ROM7_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'T65_Address_Decoder' (10#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:21]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen_top' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/clk_gen_top.v:21]
 INFO: [Synth 8-6157] synthesizing module 'dcm' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/dcm.v:25]
@@ -104,10 +96,10 @@ INFO: [Synth 8-6155] done synthesizing module 'vg_vec_timer_cntrl' (21#1) [C:/Us
 INFO: [Synth 8-6157] synthesizing module 'vg_vec_timer' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_vec_timer.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'vg_vec_timer' (22#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_vec_timer.v:21]
 INFO: [Synth 8-6157] synthesizing module 'vg_addr_dec' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_addr_dec_sim.v:1]
-INFO: [Synth 8-6157] synthesizing module 'vgRAM' [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'vgRAM' (23#1) [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.v:40]
-INFO: [Synth 8-6157] synthesizing module 'vgROM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/vgROM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vgROM' (24#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/vgROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vgRAM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/vgRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vgRAM' (23#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/vgRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vgROM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/vgROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vgROM' (24#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/vgROM_stub.v:6]
 INFO: [Synth 8-226] default block is never used [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_addr_dec_sim.v:66]
 INFO: [Synth 8-6155] done synthesizing module 'vg_addr_dec' (25#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_addr_dec_sim.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'vg_top' (26#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/vg_top.v:21]
@@ -244,25 +236,25 @@ INFO: [Synth 8-6155] done synthesizing module 'ALU_Top' (46#1) [C:/Users/Alan/Do
 WARNING: [Synth 8-7071] port 'alu_upper_tmp' of module 'ALU_Top' is unconnected for instance 'ALUs' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Top.v:108]
 WARNING: [Synth 8-7071] port 'alu_lower_tmp' of module 'ALU_Top' is unconnected for instance 'ALUs' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Top.v:108]
 WARNING: [Synth 8-7023] instance 'ALUs' of module 'ALU_Top' has 18 connections declared, but only 16 given [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Top.v:108]
-INFO: [Synth 8-6157] synthesizing module 'CombinedROM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/CombinedROM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'CombinedROM' (47#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-23848-DESKTOP-BAT3C69/realtime/CombinedROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CombinedROM' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/CombinedROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CombinedROM' (47#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/.Xil/Vivado-16720-DESKTOP-BAT3C69/realtime/CombinedROM_stub.v:6]
 WARNING: [Synth 8-567] referenced signal 'CombinedROMS' should be on the sensitivity list [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Top.v:128]
 INFO: [Synth 8-6155] done synthesizing module 'MB_Top' (48#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_Top.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'Schematic_3B' (49#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/Schematic_3B.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'tempest_top' (50#1) [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/tempest_top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1286.844 ; gain = 160.676
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.578 ; gain = 159.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1304.777 ; gain = 178.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1303.516 ; gain = 176.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1304.777 ; gain = 178.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1303.516 ; gain = 176.973
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1304.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1303.516 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'clocks/clk32_to_clk96/CLKIN_IBUFG_INST' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-365] DCM_ADV instance 'clocks/clk32_to_clk96/DCM_SP_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
@@ -286,6 +278,10 @@ Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/so
 Finished Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgROM/vgROM/vgROM_in_context.xdc] for cell 'vg_top/ADEC/vgROM'
 Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM/CombinedROM_in_context.xdc] for cell 'MB/MB/ROM_MB'
 Finished Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM/CombinedROM_in_context.xdc] for cell 'MB/MB/ROM_MB'
+Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'addr_dec/RAM'
+Finished Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'addr_dec/RAM'
+Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM/vgRAM_in_context.xdc] for cell 'vg_top/ADEC/vgRAM'
+Finished Parsing XDC File [c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM/vgRAM_in_context.xdc] for cell 'vg_top/ADEC/vgRAM'
 Parsing XDC File [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc]
 WARNING: [Vivado 12-584] No ports matched 'clk_i'. [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc:10]
 WARNING: [Vivado 12-584] No ports matched 'clk_i'. [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc:11]
@@ -372,32 +368,28 @@ Finished Parsing XDC File [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempes
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/tempest_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tempest_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/tempest_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1393.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1390.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   DCM_SP => MMCME2_ADV: 1 instance 
   IBUFG => IBUF: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1393.887 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1390.250 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for vg_top/ADEC/vgRAM. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/RAM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/ROMX. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/ROM1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/ROM3. (constraint file  auto generated constraint).
@@ -405,8 +397,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/ROM5. (constraint file  
 Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/ROM7. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vg_top/ADEC/vgROM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for MB/MB/ROM_MB. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for addr_dec/RAM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vg_top/ADEC/vgRAM. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'prev_state_reg' in module 'vg_state'
 WARNING: [Synth 8-327] inferring latch for variable 'Din_reg' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_Address_Decoder.v:476]
@@ -446,7 +440,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'DVG_reg' [C:/Users/Alan/Doc
 WARNING: [Synth 8-327] inferring latch for variable 'A1_Out_reg' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/MB_A1.v:34]
 WARNING: [Synth 8-327] inferring latch for variable 'EDB_OUT_foo_reg' [C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/ALU_Top.v:115]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -555,7 +549,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -576,19 +570,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1393.887 ; gain = 267.719
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1390.250 ; gain = 263.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1403.945 ; gain = 277.777
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1404.824 ; gain = 278.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -614,37 +608,37 @@ WARNING: [Synth 8-3295] tying undriven pin MBi_504:en to constant 0
 WARNING: [Synth 8-3295] tying undriven pin MBi_505:en to constant 0
 WARNING: [Synth 8-3295] tying undriven pin MBi_506:en to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -700,64 +694,34 @@ Report Cell Usage:
 |29    |OBUF        |    35|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.645 ; gain = 292.102
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1418.766 ; gain = 203.488
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1418.766 ; gain = 292.598
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1418.645 ; gain = 205.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.645 ; gain = 292.102
 INFO: [Project 1-571] Translating synthesized netlist
-Release 14.7 - ngc2edif P_INT.20191124 (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design RAM.ngc ...
-WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
-Processing design ...
-   Preping design's networks ...
-   Preping design's macros ...
-  finished :Prep
-Writing EDIF netlist file RAM.edif ...
-ngc2edif: Total memory usage is 4320088 kilobytes
-
-Reading core file 'c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.ngc' for (cell view 'RAM', library 'work')
-Parsing EDIF File [./.ngc2edfcache/RAM_ngc_c4929609.edif]
-Finished Parsing EDIF File [./.ngc2edfcache/RAM_ngc_c4929609.edif]
-Release 14.7 - ngc2edif P_INT.20191124 (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design vgRAM.ngc ...
-WARNING:NetListWriters:298 - No output is written to vgRAM.xncf, ignored.
-Processing design ...
-   Preping design's networks ...
-   Preping design's macros ...
-  finished :Prep
-Writing EDIF netlist file vgRAM.edif ...
-ngc2edif: Total memory usage is 4320088 kilobytes
-
-Reading core file 'c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.ngc' for (cell view 'vgRAM', library 'work')
-Parsing EDIF File [./.ngc2edfcache/vgRAM_ngc_73ae2856.edif]
-Finished Parsing EDIF File [./.ngc2edfcache/vgRAM_ngc_73ae2856.edif]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1436.371 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 214 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1426.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'clocks/clk32_to_clk96/CLKIN_IBUFG_INST' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-365] DCM_ADV instance 'clocks/clk32_to_clk96/DCM_SP_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
 WARNING: [Netlist 29-365] DCM_ADV instance 'clocks/clk32_to_clk96/DCM_SP_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20191124
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 3 inverter(s) to 21 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1436.418 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1430.684 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 129 instances were transformed.
+  A total of 125 instances were transformed.
   DCM_SP => MMCME2_ADV: 1 instance 
   IBUFG => IBUF: 1 instance 
   LD => LDCE: 85 instances
   LD => LDCE (inverted pins: G): 20 instances
   LDC => LDCE: 17 instances
   LDC => LDCE (inverted pins: G): 1 instance 
-  RAMB16_S4_S4 => RAMB18E1: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-174 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+171 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1436.418 ; gain = 310.250
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1430.684 ; gain = 304.141
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.runs/synth_1/tempest_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file tempest_top_utilization_synth.rpt -pb tempest_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 16 14:51:06 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 17 07:28:11 2020...

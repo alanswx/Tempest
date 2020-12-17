@@ -156,10 +156,6 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65_ALU.vhd
   C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/imports/TEMPEST/T65.vhd
 }
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xco
-
-read_ip -quiet C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xco
-
 read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX.xci
 set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/ROMX/ROMX_ooc.xdc]
 
@@ -181,6 +177,12 @@ set_property used_in_implementation false [get_files -all c:/Users/Alan/Document
 read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM.xci
 set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/CombinedROM/CombinedROM_ooc.xdc]
 
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/RAM/RAM_ooc.xdc]
+
+read_ip -quiet c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM.xci
+set_property used_in_implementation false [get_files -all c:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/sources_1/ip/vgRAM/vgRAM_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -193,8 +195,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc
 set_property used_in_implementation false [get_files C:/Users/Alan/Documents/GitHub/Tempest/tempest/tempest.srcs/constrs_1/imports/TEMPEST/est/project_1/Nexys-A7-100T-Master.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

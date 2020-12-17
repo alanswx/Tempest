@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Dec 16 14:51:06 2020
+| Date         : Thu Dec 17 07:28:11 2020
 | Host         : DESKTOP-BAT3C69 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file tempest_top_utilization_synth.rpt -pb tempest_top_utilization_synth.pb
 | Design       : tempest_top
@@ -64,14 +64,13 @@ Table of Contents
 2. Memory
 ---------
 
-+-------------------+------+-------+-----------+-------+
-|     Site Type     | Used | Fixed | Available | Util% |
-+-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |       135 |  1.48 |
-|   RAMB36/FIFO*    |    0 |     0 |       135 |  0.00 |
-|   RAMB18          |    4 |     0 |       270 |  1.48 |
-|     RAMB18E1 only |    4 |       |           |       |
-+-------------------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       135 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       135 |  0.00 |
+|   RAMB18       |    0 |     0 |       270 |  0.00 |
++----------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -163,7 +162,6 @@ Table of Contents
 | MUXF8      |   16 |               MuxFx |
 | FDSE       |    9 |        Flop & Latch |
 | BUFG       |    9 |               Clock |
-| RAMB18E1   |    4 |        Block Memory |
 | IBUF       |    3 |                  IO |
 | MMCME2_ADV |    1 |               Clock |
 +------------+------+---------------------+
@@ -176,11 +174,13 @@ Table of Contents
 |   Ref Name  | Used |
 +-------------+------+
 | vgROM       |    1 |
+| vgRAM       |    1 |
 | ROMX        |    1 |
 | ROM7        |    1 |
 | ROM5        |    1 |
 | ROM3        |    1 |
 | ROM1        |    1 |
+| RAM         |    1 |
 | CombinedROM |    1 |
 +-------------+------+
 
@@ -190,9 +190,6 @@ Table of Contents
 
 +----------+------+
 | Ref Name | Used |
-+----------+------+
-| vgRAM    |    1 |
-| RAM      |    1 |
 +----------+------+
 
 
